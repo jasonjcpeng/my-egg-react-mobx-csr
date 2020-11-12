@@ -1,0 +1,52 @@
+{
+  "name": "my-egg-react-mobx-csr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clear": "node build/clear.js",
+    "build:test": "npm run clear && npx webpack --env.NODE_ENV=development --mode=development",
+    "build": "npm run clear && npx webpack --env.NODE_ENV=production --mode=production",
+    "start:dev": "npx egg-bin dev",
+    "start:test": "cross-env EGG_SERVER_ENV=default npx egg-scripts start ",
+    "watch": "npx webpack-dev-server --env.NODE_ENV=local --mode=development --watch",
+    "start": "cross-env EGG_SERVER_ENV=prod npx egg-scripts start",
+    "stop": "npx egg-scripts stop"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "egg-bin": "^4.15.0",
+    "file-loader": "^6.0.0",
+    "file-system": "^2.2.2",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.6",
+    "typescript-plugin-css-modules": "^2.4.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "@loadable/component": "^5.13.1",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "antd": "^4.4.2",
+    "axios": "^0.21.0",
+    "egg": "^2.28.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "history": "^5.0.0",
+    "mobx": "5.15.4",
+    "mobx-react": "6.1.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  }
+}

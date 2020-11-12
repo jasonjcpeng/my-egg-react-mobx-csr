@@ -1,0 +1,299 @@
+{
+  "keys": "G:\\MyOwn\\my-egg-rect-mobx-csr\\config\\config.default.js",
+  "view": {
+    "defaultViewEngine": "G:\\MyOwn\\my-egg-rect-mobx-csr\\config\\config.default.js",
+    "mapping": {
+      ".html": "G:\\MyOwn\\my-egg-rect-mobx-csr\\config\\config.default.js"
+    },
+    "root": "G:\\MyOwn\\my-egg-rect-mobx-csr\\config\\config.default.js",
+    "cache": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultExtension": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view\\config\\config.default.js"
+  },
+  "static": {
+    "maxAge": "G:\\MyOwn\\my-egg-rect-mobx-csr\\config\\config.default.js",
+    "prefix": "G:\\MyOwn\\my-egg-rect-mobx-csr\\config\\config.default.js",
+    "dir": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "session": {
+    "maxAge": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "type": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "refererWhiteList": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "maxAge": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-watcher\\config\\config.default.js",
+    "eventSources": {
+      "default": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-schedule\\config\\config.default.js"
+  },
+  "multipart": {
+    "mode": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js",
+    "cleanSchedule": {
+      "cron": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "nunjucks": {
+    "autoescape": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view-nunjucks\\config\\config.default.js"
+  },
+  "env": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "name": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "cookies": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "maxIpsCount": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "version": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "description": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "main": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "clear": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "build:test": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "build": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "start:dev": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "start:test": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "watch": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "start": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "stop": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+    },
+    "author": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "license": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "devDependencies": {
+      "css-loader": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "file-loader": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "file-system": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "html-webpack-plugin": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "node-sass": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "resolve-url-loader": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "sass-loader": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "style-loader": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "ts-loader": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "typescript": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "typescript-plugin-css-modules": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "url-loader": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "webpack": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "webpack-cli": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "webpack-dev-server": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "cross-env": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "@loadable/component": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "@types/react": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "@types/react-dom": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "antd": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "axios": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "egg": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "history": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "mobx": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "mobx-react": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "react": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "react-dom": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "react-router-dom": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "baseDir": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "textLimit": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "strict": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "depth": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+    },
+    "onerror": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+  },
+  "logger": {
+    "dir": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "env": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "level": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "allowDebugAtProd": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "logging": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "port": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\config.default.js"
+}

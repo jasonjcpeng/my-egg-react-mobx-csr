@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outDir": "./app/public/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "types": [],
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+      }
+    ]
+  },
+  "include": [
+    "web/*",
+    "declarations.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*"
+  ]
+}
