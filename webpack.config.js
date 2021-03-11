@@ -34,7 +34,7 @@ module.exports = env => {
           },
           { loader: "resolve-url-loader" }]
         },
-        // scss
+        // scss module
         {
           test: /\.scss$/,
           use: [{ loader: "style-loader" },
@@ -45,9 +45,20 @@ module.exports = env => {
                 localIdentName: '[local]--[hash:base64:12]'
               }
             }
+          }, { loader: "resolve-url-loader" },
+          { loader: "sass-loader" }],
+          include: /style\.scss$/,
+        },
+        // scss no module
+        {
+          test: /\.scss$/,
+          use: [{ loader: "style-loader" },
+          {
+            loader: "css-loader",
           },
           { loader: "resolve-url-loader" },
-          { loader: "sass-loader" }]
+          { loader: "sass-loader" }],
+          exclude: /style\.scss$/
         },
         // img
         {
@@ -124,7 +135,7 @@ module.exports = env => {
         filename: 'index.html',
       }),
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify(env.NODE_ENV)
+        process_env_NODE_ENV: JSON.stringify(env.NODE_ENV)
       })
     ],
     // 性能提示

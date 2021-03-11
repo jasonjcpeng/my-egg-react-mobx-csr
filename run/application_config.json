@@ -16,19 +16,7 @@
       "domainWhiteList": [],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
-      "csrf": {
-        "enable": true,
-        "type": "ctoken",
-        "ignoreJSON": false,
-        "useSession": false,
-        "cookieName": "csrfToken",
-        "sessionName": "csrfToken",
-        "headerName": "x-csrf-token",
-        "bodyName": "_csrf",
-        "queryName": "_csrf",
-        "refererWhiteList": [],
-        "matching": "<Function anonymous>"
-      },
+      "csrf": false,
       "xframe": {
         "enable": true,
         "value": "SAMEORIGIN",
@@ -88,25 +76,29 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-session\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-jsonp\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-onerror\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-i18n\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-watcher\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-schedule\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-static\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view-nunjucks\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\locales",
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\config\\locales"
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-session\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-security\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-jsonp\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-onerror\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-i18n\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-watcher\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-schedule\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-multipart\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-development\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-logrotator\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-static\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-view\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-view-nunjucks\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\@eggjs\\http-proxy\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-cors\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-development-proxyagent\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\locales",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -115,16 +107,19 @@
       "functionName": "__"
     },
     "watcher": {
-      "type": "default",
+      "type": "development",
       "eventSources": {
-        "default": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
       "scheduleLogger": {
         "consoleLevel": "NONE",
         "file": "egg-schedule.log"
+      },
+      "httpProxyLogger": {
+        "file": "http-proxy.log"
       }
     },
     "schedule": {
@@ -146,6 +141,14 @@
         "cron": "0 30 4 * * *"
       }
     },
+    "development": {
+      "watchDirs": [],
+      "ignoreDirs": [],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false,
+      "overrideIgnore": false
+    },
     "logrotator": {
       "filesRotateByHour": null,
       "hourDelimiter": "-",
@@ -157,7 +160,10 @@
     },
     "static": {
       "prefix": "/",
-      "dir": "G:\\MyOwn\\my-egg-rect-mobx-csr\\app\\public",
+      "dir": [
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\app\\public\\",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\app\\static\\"
+      ],
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -166,9 +172,10 @@
     },
     "view": {
       "root": [
-        "G:\\MyOwn\\my-egg-rect-mobx-csr\\app\\public\\"
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\app\\public\\",
+        "G:\\MyOwn\\my-egg-react-mobx-csr\\app\\template\\"
       ],
-      "cache": true,
+      "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
       "mapping": {
@@ -180,9 +187,36 @@
       "throwOnUndefined": false,
       "trimBlocks": false,
       "lstripBlocks": false,
-      "cache": true
+      "cache": false
     },
-    "env": "default",
+    "httpProxy": {
+      "timeout": 60000,
+      "withCredentials": false,
+      "charsetHeaders": "_input_charset",
+      "ignoreHeaders": {
+        "strict-transport-security": true,
+        "x-powered-by": true,
+        "x-readtime": true,
+        "connection": true,
+        "date": true,
+        "keep-alive": true,
+        "proxy-authenticate": true,
+        "proxy-authorization": true,
+        "te": true,
+        "trailer": true,
+        "transfer-encoding": true,
+        "upgrade": true
+      }
+    },
+    "cors": {
+      "origin": "http://localhost:7002",
+      "credentials": true,
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+    },
+    "proxyagent": {
+      "rejectUnauthorized": false
+    },
+    "env": "local",
     "name": "my-egg-react-mobx-csr",
     "keys": "<String len: 20>",
     "cookies": {},
@@ -199,19 +233,22 @@
       "main": "index.js",
       "scripts": {
         "clear": "node build/clear.js",
-        "build:test": "npm run clear && npx webpack --env.NODE_ENV=development --mode=development",
+        "build:test": "npm run clear && npx webpack --env.NODE_ENV=test --mode=production",
         "build": "npm run clear && npx webpack --env.NODE_ENV=production --mode=production",
-        "start:dev": "npx egg-bin dev",
-        "start:test": "cross-env EGG_SERVER_ENV=default npx egg-scripts start ",
+        "start:dev": "cross-env http_proxy=http://127.0.0.1:8888 egg-bin dev",
+        "start:test": "egg-scripts start --env=unittest ",
         "watch": "npx webpack-dev-server --env.NODE_ENV=local --mode=development --watch",
-        "start": "cross-env EGG_SERVER_ENV=prod npx egg-scripts start",
-        "stop": "npx egg-scripts stop"
+        "dev": "concurrently 'npm:watch' 'npm:start:dev'",
+        "start": "egg-scripts start --env=prod",
+        "stop": "egg-scripts stop"
       },
       "author": "",
       "license": "ISC",
       "devDependencies": {
+        "concurrently": "^5.3.0",
         "css-loader": "^3.6.0",
         "egg-bin": "^4.15.0",
+        "egg-development-proxyagent": "^1.0.0",
         "file-loader": "^6.0.0",
         "file-system": "^2.2.2",
         "html-webpack-plugin": "^4.3.0",
@@ -228,25 +265,39 @@
         "webpack-dev-server": "^3.11.0"
       },
       "dependencies": {
-        "cross-env": "^7.0.2",
+        "@antv/g2plot": "^2.3.12",
+        "@eggjs/http-proxy": "^1.1.0",
+        "@huyafed/huya-oa": "^1.0.0",
+        "@huyafed/taf-lib-wup": "^1.0.0",
         "@loadable/component": "^5.13.1",
         "@types/react": "^16.9.41",
         "@types/react-dom": "^16.9.8",
         "antd": "^4.4.2",
         "axios": "^0.21.0",
+        "copy-to-clipboard": "^3.3.1",
+        "cross-env": "^7.0.2",
         "egg": "^2.28.0",
+        "egg-cors": "^2.2.3",
+        "egg-scripts": "^2.13.0",
         "egg-view-nunjucks": "^2.2.0",
+        "file-saver": "^2.0.5",
         "history": "^5.0.0",
+        "js-cookie": "^2.2.1",
         "mobx": "5.15.4",
         "mobx-react": "6.1.8",
+        "moment": "^2.29.1",
+        "numeral": "^2.0.6",
+        "qs": "^6.9.4",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "react-router-dom": "^5.2.0"
+        "react-router-dom": "^5.2.0",
+        "webuploader": "^0.1.8",
+        "xlsx": "^0.16.9"
       }
     },
-    "baseDir": "G:\\MyOwn\\my-egg-rect-mobx-csr",
+    "baseDir": "G:\\MyOwn\\my-egg-react-mobx-csr",
     "HOME": "C:\\Users\\Administrator",
-    "rundir": "G:\\MyOwn\\my-egg-rect-mobx-csr\\run",
+    "rundir": "G:\\MyOwn\\my-egg-react-mobx-csr\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -261,7 +312,7 @@
       "pageUrl": ""
     },
     "siteFile": {
-      "/favicon.ico": "<Buffer len: 6463>"
+      "/favicon.ico": "<Buffer len: 18648>"
     },
     "bodyParser": {
       "enable": true,
@@ -278,19 +329,21 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "C:\\Users\\Administrator\\logs\\my-egg-react-mobx-csr",
+      "dir": "G:\\MyOwn\\my-egg-react-mobx-csr\\logs\\my-egg-react-mobx-csr",
       "encoding": "utf8",
-      "env": "default",
+      "env": "local",
       "level": "INFO",
       "consoleLevel": "INFO",
-      "disableConsoleAfterReady": true,
+      "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
       "appLogName": "my-egg-react-mobx-csr-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
-      "coreLogger": {},
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
       "allowDebugAtProd": false,
       "type": "application"
     },
@@ -299,19 +352,26 @@
       "dnsCacheLookupInterval": 10000,
       "dnsCacheMaxLength": 1000,
       "request": {
-        "timeout": 5000
+        "timeout": 5000,
+        "enableProxy": false,
+        "rejectUnauthorized": false,
+        "proxy": "http://127.0.0.1:8888"
       },
       "httpAgent": {
         "keepAlive": true,
         "freeSocketTimeout": 4000,
         "maxSockets": 9007199254740991,
-        "maxFreeSockets": 256
+        "maxFreeSockets": 256,
+        "timeout": 30000,
+        "socketActiveTTL": 0
       },
       "httpsAgent": {
         "keepAlive": true,
         "freeSocketTimeout": 4000,
         "maxSockets": 9007199254740991,
-        "maxFreeSockets": 256
+        "maxFreeSockets": 256,
+        "timeout": 30000,
+        "socketActiveTTL": 0
       }
     },
     "meta": {
@@ -319,6 +379,7 @@
       "logging": false
     },
     "coreMiddleware": [
+      "cors",
       "meta",
       "siteFile",
       "notfound",
@@ -327,7 +388,8 @@
       "overrideMethod",
       "session",
       "securities",
-      "i18n"
+      "i18n",
+      "eggLoaderTrace"
     ],
     "workerStartTimeout": 600000,
     "serverTimeout": null,
@@ -343,6 +405,12 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "apiProxyMap": {
+      "/crash/": {
+        "host": "www.baidu.com:80",
+        "protocol": "http"
+      }
+    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": [],
     "appMiddleware": "~config~appMiddlewares",
@@ -367,8 +435,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-session",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-session",
       "version": "3.2.0"
     },
     "security": {
@@ -380,8 +448,8 @@
         "session"
       ],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-security",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-security",
       "version": "2.8.0"
     },
     "jsonp": {
@@ -393,8 +461,8 @@
         "security"
       ],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-jsonp",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -406,8 +474,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-onerror",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -417,8 +485,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-i18n",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -428,8 +496,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-watcher",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-watcher",
       "version": "3.1.1"
     },
     "schedule": {
@@ -439,8 +507,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-schedule",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-schedule",
       "version": "3.6.5"
     },
     "multipart": {
@@ -452,9 +520,24 @@
         "schedule"
       ],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-multipart",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-multipart",
       "version": "2.10.3"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-development",
+      "version": "2.7.0"
     },
     "logrotator": {
       "enable": true,
@@ -465,8 +548,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-logrotator",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -476,8 +559,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-static",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -487,8 +570,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-view",
       "version": "2.1.2"
     },
     "nunjucks": {
@@ -501,9 +584,44 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "G:\\MyOwn\\my-egg-rect-mobx-csr\\config\\plugin.js",
-      "path": "G:\\MyOwn\\my-egg-rect-mobx-csr\\node_modules\\egg-view-nunjucks",
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-view-nunjucks",
       "version": "2.2.0"
+    },
+    "httpProxy": {
+      "enable": true,
+      "package": "@eggjs/http-proxy",
+      "name": "httpProxy",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\@eggjs\\http-proxy",
+      "version": "1.1.0"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-cors",
+      "version": "2.2.3"
+    },
+    "proxyagent": {
+      "enable": true,
+      "package": "egg-development-proxyagent",
+      "name": "proxyagent",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\plugin.js",
+      "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-development-proxyagent",
+      "version": "1.0.0"
     }
   }
 }

@@ -1,12 +1,12 @@
 import defaultConfig from './config.default';
-import devConfig from './config.dev';
+import testConfig from './config.test';
 import prodConfig from './config.prod';
 export default (() => {
-  switch (window['process.env.NODE_ENV']) {
+  switch (process_env_NODE_ENV) {
     case 'production':
       return Object.assign(defaultConfig, prodConfig);
-    case 'development':
-      return Object.assign(defaultConfig, devConfig);
+    case 'test':
+      return Object.assign(defaultConfig, testConfig);
     default:
       return defaultConfig;
   }

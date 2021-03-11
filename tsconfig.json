@@ -9,13 +9,13 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "module": "es6",
-    "target": "es5",
     "jsx": "react",
     "types": [],
     "lib": [
       "dom",
       "es2015"
     ],
+    "target": "es5",
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "plugins": [

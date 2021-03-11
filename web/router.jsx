@@ -12,9 +12,12 @@ import {
 export default (props) => {
   const { routerStore } = useStores().rootStore;
   useEffect(() => {
-    history.listen(({ location }) => {
+    const unlisten = history.listen(({ location }) => {
       routerStore.history = location.hash;
     });
+    return () => {
+      unlisten();
+    }
   }, [])
 
   return useObserver(() => <Router >

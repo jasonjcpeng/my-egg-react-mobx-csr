@@ -3,29 +3,34 @@ import { useObserver } from 'mobx-react-lite';
 import { useStores } from '@store';
 import { Menu } from 'antd';
 import {
-  AppstoreOutlined,
-  PieChartOutlined,
+  CompassOutlined,
+  ShakeOutlined,
+  AimOutlined,
 } from '@ant-design/icons';
 
-const { SubMenu } = Menu;
-
 export default (props) => {
-  const { routerStore, layoutStore } = useStores().rootStore;
+  const { routerStore, userStore } = useStores().rootStore;
+  const filterKey = { // 过滤器，实现有些路由地址不符合菜单key但也显示激活状态
+    '/': '/index/index',
+  }
   return useObserver(() => <Menu
+    key={routerStore.path}
     mode="inline"
     theme="dark"
-    defaultOpenKeys={[(routerStore.path.match(/(^\/.*(?=\/))|(^\/.*)/) ? routerStore.path.match(/(^\/.*(?=\/))|(^\/.*)/)[0] : '')]}
-    defaultSelectedKeys={[routerStore.path]}
+    defaultOpenKeys={[(routerStore.path.match(/(^\/).*(?=\/)/) ? routerStore.path.match(/(^\/).*(?=\/)/)[0].replace(/(^\/)/, '') : '')]}
+    defaultSelectedKeys={[filterKey[routerStore.path] || routerStore.path]}
     onClick={(e) => {
-      window.location.href = `#${e.key}`
-    }}
-  >
-    <Menu.Item key="/" icon={<PieChartOutlined />} >{routerStore.path}</Menu.Item>
-    <SubMenu key="/info" icon={<AppstoreOutlined />} title={'级联菜单'} >
-      <Menu.Item key="/info/cart" icon={<PieChartOutlined />}>二菜单</Menu.Item>
-      <Menu.Item key="/info/bus" icon={<PieChartOutlined />}>第二个二菜单</Menu.Item>
-    </SubMenu>
-    <Menu.Item key="/about" icon={<PieChartOutlined />}>关于</Menu.Item>
-    <Menu.Item key="/router/not/match" icon={<PieChartOutlined />}>通往404</Menu.Item>
+      switch (e.key) {
+        default:
+          routerStore.jump({ path: e.key });
+          break;
+      }
+    }}>
+    <Menu.SubMenu key="index" icon={<AimOutlined />} title="首页">
+      <Menu.Item icon={<CompassOutlined />} key="/index/index">首页</Menu.Item>
+    </Menu.SubMenu>
+    <Menu.SubMenu key="about" icon={<ShakeOutlined />} title="关于">
+      <Menu.Item icon={<CompassOutlined />} key="/about/index">about</Menu.Item>
+    </Menu.SubMenu>
   </Menu>)
 }

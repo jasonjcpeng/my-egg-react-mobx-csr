@@ -1,3 +1,23 @@
 .logo {
+  span {
+    display: block;
+    font-size: 32px;
+    color: #fff;
+    animation: fadeIn forwards 1s ease-in;
+  }
   height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }

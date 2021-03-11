@@ -5,19 +5,22 @@
   "main": "index.js",
   "scripts": {
     "clear": "node build/clear.js",
-    "build:test": "npm run clear && npx webpack --env.NODE_ENV=development --mode=development",
+    "build:test": "npm run clear && npx webpack --env.NODE_ENV=test --mode=production",
     "build": "npm run clear && npx webpack --env.NODE_ENV=production --mode=production",
-    "start:dev": "npx egg-bin dev",
-    "start:test": "cross-env EGG_SERVER_ENV=default npx egg-scripts start ",
+    "start:dev": "cross-env http_proxy=http://127.0.0.1:8888 egg-bin dev",
+    "start:test": "egg-scripts start --env=unittest ",
     "watch": "npx webpack-dev-server --env.NODE_ENV=local --mode=development --watch",
-    "start": "cross-env EGG_SERVER_ENV=prod npx egg-scripts start",
-    "stop": "npx egg-scripts stop"
+    "dev": "concurrently 'npm:watch' 'npm:start:dev'",
+    "start": "egg-scripts start --env=prod",
+    "stop": "egg-scripts stop"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "css-loader": "^3.6.0",
     "egg-bin": "^4.15.0",
+    "egg-development-proxyagent": "^1.0.0",
     "file-loader": "^6.0.0",
     "file-system": "^2.2.2",
     "html-webpack-plugin": "^4.3.0",
@@ -34,19 +37,31 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "cross-env": "^7.0.2",
+    "@antv/g2plot": "^2.3.12",
+    "@eggjs/http-proxy": "^1.1.0",
     "@loadable/component": "^5.13.1",
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
     "antd": "^4.4.2",
     "axios": "^0.21.0",
+    "copy-to-clipboard": "^3.3.1",
+    "cross-env": "^7.0.2",
     "egg": "^2.28.0",
+    "egg-cors": "^2.2.3",
+    "egg-scripts": "^2.13.0",
     "egg-view-nunjucks": "^2.2.0",
+    "file-saver": "^2.0.5",
     "history": "^5.0.0",
+    "js-cookie": "^2.2.1",
     "mobx": "5.15.4",
     "mobx-react": "6.1.8",
+    "moment": "^2.29.1",
+    "numeral": "^2.0.6",
+    "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "webuploader": "^0.1.8",
+    "xlsx": "^0.16.9"
   }
 }

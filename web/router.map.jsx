@@ -1,25 +1,22 @@
 import Lazy from '@components/lazy-load-components';
+import home from '@app/index/index';
 
 
 export default [
   {
-    title: 'about',
-    path: "/about",
-    component: Lazy(() => import('@app/about')),
+    title: '首页',
+    path: "/index/index",
+    component: home,
   },
   {
-    title: 'bus',
-    path: "/info/bus",
-    component: Lazy(() => import('@app/about')),
-  },
-  {
-    title: 'cart',
-    path: "/info/cart",
-    component: Lazy(() => import('@app/index')),
-  }, {
+    title: '关于',
+    path: "/about/index",
+    component: Lazy(() => import('@app/about/index')),
+  }
+  , { // index
     title: '首页',
     path: "/",
-    component: Lazy(() => import('@app/index')),
+    component: home,
   }, { // 注意！ 404页面必须放在末尾
     title: '404',
     path: "*",

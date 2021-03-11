@@ -11,11 +11,6 @@ class Index {
   }
 
   @action
-  setCount(count) {
-    this.count = count
-  }
-
-  @action
   async getResponse() {
     const data = await fetch({
       method: 'get',
@@ -30,14 +25,6 @@ class Index {
       this.response = 'res';
     })
   }
-
-
-  @computed
-  get total() {
-    return this.count + this.init;
-  }
-
-
 
 }
 

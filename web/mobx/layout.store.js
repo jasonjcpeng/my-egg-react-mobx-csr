@@ -5,6 +5,13 @@ class Layout {
   collapsed = false;
   @observable
   isLoading = false;
+  @observable
+  message = undefined; // 提示信息状态 
+
+  @action
+  setMessage(message) {
+    this.message = message
+  }
 
   @action
   setCollapsed(boolean) {
