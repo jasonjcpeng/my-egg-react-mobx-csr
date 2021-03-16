@@ -105,11 +105,11 @@ module.exports = env => {
       extensions: ['.tsx', '.ts', '.js', '.jsx', ".css", ".scss"],
       alias: {
         '@app': path.resolve(__dirname, 'web/app'),
-        '@components': path.resolve(__dirname, 'web/components/'),
+        '@components': path.resolve(__dirname, 'web/components'),
         '@store': path.resolve(__dirname, 'web/mobx'),
         '@config': path.resolve(__dirname, 'web/config'),
         '@lib': path.resolve(__dirname, 'web/lib'),
-        '@declarations': path.resolve(__dirname, 'declarations/'),
+        '@declarations': path.resolve(__dirname, 'declarations'),
       }
     },
     // 目标输出位

@@ -1,4 +1,4 @@
-import Lazy from '@components/lazy-load-components';
+import Lazy from '@components/lazy-load-components/index';
 import home from '@app/index/index';
 
 
