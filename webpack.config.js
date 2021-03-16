@@ -13,7 +13,7 @@ module.exports = env => {
     devtool: 'cheap-eval-source-map',
     // 入口
     entry: {
-      index: './web/entry.jsx',
+      index: './web/entry.tsx',
       vendor: ['react', 'react-dom', 'history']
     },
     // Loader
@@ -21,7 +21,7 @@ module.exports = env => {
       rules: [
         // Typescript
         {
-          test: /\.(tsx|jsx|js)$/,
+          test: /\.(tsx|jsx|js|ts)$/,
           use: 'ts-loader',
           exclude: /node_modules/,
         },
@@ -104,11 +104,12 @@ module.exports = env => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.jsx', ".css", ".scss"],
       alias: {
-        '@app': path.resolve(__dirname, 'web/app/'),
+        '@app': path.resolve(__dirname, 'web/app'),
         '@components': path.resolve(__dirname, 'web/components/'),
-        '@store': path.resolve(__dirname, 'web/mobx/index.js'),
-        '@config': path.resolve(__dirname, 'web/config/index.js'),
+        '@store': path.resolve(__dirname, 'web/mobx'),
+        '@config': path.resolve(__dirname, 'web/config'),
         '@lib': path.resolve(__dirname, 'web/lib'),
+        '@declarations': path.resolve(__dirname, 'declarations/'),
       }
     },
     // 目标输出位

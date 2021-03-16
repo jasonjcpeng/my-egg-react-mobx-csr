@@ -263,8 +263,6 @@
     "dependencies": {
       "@antv/g2plot": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "@eggjs/http-proxy": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
-      "@huyafed/huya-oa": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
-      "@huyafed/taf-lib-wup": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "@loadable/component": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "@types/react": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "@types/react-dom": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",

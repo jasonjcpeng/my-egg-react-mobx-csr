@@ -13,19 +13,42 @@
     "types": [],
     "lib": [
       "dom",
-      "es2015"
+      "es5",
+      "es2015",
+      "es2017"
     ],
     "target": "es5",
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": [
+        "./web/app/*"
+      ],
+      "@container/*": [
+        "./web/components/*"
+      ],
+      "@store/*": [
+        "./web/mobx/*"
+      ],
+      "@config/*": [
+        "./web/config/*"
+      ],
+      "@lib/*": [
+        "./web/lib/*"
+      ],
+      "@declarations/*": [
+        "./declarations/*"
+      ]
+    },
     "plugins": [
       {
         "name": "typescript-plugin-css-modules",
       }
-    ]
+    ],
   },
   "include": [
-    "web/*",
+    "declarations/*",
     "declarations.d.ts"
   ],
   "exclude": [

@@ -1,7 +1,6 @@
-import Config from '@config';
 import axios from 'axios';
 import Cookies from 'js-cookie';
-import Config from '@config';
+import Config from '@config/index';
 
 export default function (config) {
   const oaToken = Cookies.get('token') || Config.mockUser.oaToken;

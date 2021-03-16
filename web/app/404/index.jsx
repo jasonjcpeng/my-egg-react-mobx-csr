@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import * as styles from './style.scss';
 import { useObserver } from 'mobx-react-lite';
-import { useStores } from '@store';
+import { useStores } from '@store/index';
 
 export default (props) => {
   const { indexStore } = useStores().rootStore;

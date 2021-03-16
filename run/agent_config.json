@@ -232,8 +232,6 @@
       "dependencies": {
         "@antv/g2plot": "^2.3.12",
         "@eggjs/http-proxy": "^1.1.0",
-        "@huyafed/huya-oa": "^1.0.0",
-        "@huyafed/taf-lib-wup": "^1.0.0",
         "@loadable/component": "^5.13.1",
         "@types/react": "^16.9.41",
         "@types/react-dom": "^16.9.8",
@@ -247,7 +245,6 @@
         "egg-view-nunjucks": "^2.2.0",
         "file-saver": "^2.0.5",
         "history": "^5.0.0",
-        "jquery": "^3.5.1",
         "js-cookie": "^2.2.1",
         "mobx": "5.15.4",
         "mobx-react": "6.1.8",
@@ -361,15 +358,6 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
-    "huyaoa": {
-      "exclude": [
-        "^\\/healthy",
-        "^\\/api\\/.*",
-        "^\\/mtpreport"
-      ],
-      "oaAppId": "471",
-      "oaPublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAteaR2FPH86AyTV0P86f0J4vNZur+lRVmI/mFmmMCMBGXiXILlv3FxOPaMuEKlQTN21nz/r2FCwbkmw7KHG3CjQYUVM/Q8Z6G5AjVYK6kiU5Qx77+Fckzm8lB+DSW+Kq3Ykk7zQpONCa+FbkFpsoRIHZkrLsE9LmcF7lrOFLMDgGwp3aSsfJ/OU5ytgOvUr+mHqHpufULO9r5lirSDn9TPwz7kH8HarFd1GOCO4M6fnUJmdjWwy6/jPIg1bh1wI8Pv4uzA2606zHORwufnBxkWQtzDzgW1q5EAGxsgPcKm4nnRaKoktg9OMJszHVUGij/ITuh79FWdT96Adk94OKKBQIDAQAB"
-    },
     "apiProxyMap": {
       "/crash/": {
         "host": "www.baidu.com:80",

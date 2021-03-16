@@ -1,9 +1,4 @@
 {
-  "huyaoa": {
-    "exclude": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\config.default.js",
-    "oaAppId": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\config.default.js",
-    "oaPublicKey": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\config.default.js"
-  },
   "keys": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\config.default.js",
   "view": {
     "defaultViewEngine": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\config.default.js",
@@ -268,8 +263,6 @@
     "dependencies": {
       "@antv/g2plot": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "@eggjs/http-proxy": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
-      "@huyafed/huya-oa": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
-      "@huyafed/taf-lib-wup": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "@loadable/component": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "@types/react": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "@types/react-dom": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
@@ -283,7 +276,6 @@
       "egg-view-nunjucks": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "file-saver": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "history": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
-      "jquery": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "js-cookie": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "mobx": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",
       "mobx-react": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\config.default.js",

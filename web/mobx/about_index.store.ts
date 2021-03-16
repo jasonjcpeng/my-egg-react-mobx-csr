@@ -1,12 +1,14 @@
 import { observable, action, computed, runInAction } from 'mobx';
+import { rootStore } from 'declarations/web/store/root.store';
 import fetch from '@lib/fetch';
 
 class Index {
+  rootStore: rootStore;
   @observable count = 0;
   @observable init = 1;
   @observable response = '';
 
-  constructor(rootStore) {
+  constructor(rootStore: rootStore) {
     this.rootStore = rootStore;
   }
 

@@ -267,8 +267,6 @@
       "dependencies": {
         "@antv/g2plot": "^2.3.12",
         "@eggjs/http-proxy": "^1.1.0",
-        "@huyafed/huya-oa": "^1.0.0",
-        "@huyafed/taf-lib-wup": "^1.0.0",
         "@loadable/component": "^5.13.1",
         "@types/react": "^16.9.41",
         "@types/react-dom": "^16.9.8",

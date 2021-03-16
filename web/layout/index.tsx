@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { useObserver } from 'mobx-react-lite';
-import { useStores } from '@store';
+import { useStores } from '@store/index';
 import SideBar from './side-bar';
 import { Layout, message } from 'antd';
 import Router from '../router';
 import 'antd/dist/antd.css';
+import * as D_RootStore from 'declarations/web/store/root.store';
 const { Content, Footer, Sider } = Layout;
 
 export default () => {
@@ -14,18 +15,19 @@ export default () => {
   })
 
   useEffect(() => {
-    if (!layoutStore.message) {
+    let layoutStoreMessage: D_RootStore.message = layoutStore.message
+    if (layoutStoreMessage.status === '') {
       return () => { }
     }
     const config = {
-      content: layoutStore.message.content || layoutStore.message.status,
+      content: layoutStoreMessage.content || layoutStoreMessage.status,
       duration: 1,
-      key: layoutStore.message.content || 'key',
+      key: layoutStoreMessage.content || 'key',
       onClose: () => {
-        layoutStore.setMessage(undefined)
+        layoutStore.message = { content: '', status: '' }
       }
     }
-    switch (layoutStore.message.status) {
+    switch (layoutStoreMessage.status) {
       case 'error':
         message.error(config);
         break;
@@ -54,7 +56,7 @@ export default () => {
         <Layout style={{ marginLeft: layoutStore.collapsed ? 80 : 200 }}>
           <Layout.Header style={{ padding: 0, background: '#fff' }}>
           </Layout.Header>
-          <Content key={routerStore.appId} style={{ padding: '10px 0 0 0', height: '100%', overflow: 'auto', margin: '', overflow: 'initial' }}>
+          <Content key={routerStore.query['appId']} style={{ padding: '10px 0 0 0', height: '100%', overflow: 'auto', margin: '', overflowY: 'initial' }}>
             <Router />
           </Content>
         </Layout>

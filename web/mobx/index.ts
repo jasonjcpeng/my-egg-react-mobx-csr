@@ -6,6 +6,12 @@ import layoutStore from './layout.store'
 import userStore from './user.store'
 
 const rootStore = class {
+  userStore: any;
+  routerStore: any;
+  layoutStore: any;
+  indexIndexStore: any;
+  aboutIndexStore: any;
+
   constructor() {
     this.userStore = new userStore(this);
     this.routerStore = new routerStore(this);

@@ -1,17 +1,19 @@
 import { observable, action, computed, runInAction } from 'mobx';
+import { rootStore } from 'declarations/web/store/root.store';
 import fetch from '@lib/fetch';
 
 class Index {
+  rootStore: rootStore;
   @observable data = [];
   @observable count = 0;
   @observable response = '';
 
-  constructor(rootStore) {
+  constructor(rootStore: rootStore) {
     this.rootStore = rootStore;
   }
 
   @computed
-  get countPow() {
+  get countPow(): number {
     return Math.pow(this.count, 2);
   }
 
@@ -24,7 +26,7 @@ class Index {
         params: {
         }
       });
-      this.response = data
+      this.response = data + ''
     } catch (error) {
       this.response = error
     }

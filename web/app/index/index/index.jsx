@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import * as styles from './style.scss';
 import { useObserver } from 'mobx-react-lite';
-import { useStores } from '@store';
+import { useStores } from '@store/index';
 import { List, Button, Statistic } from 'antd'
 
 export default (props) => {

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useStores } from '@store';
+import { useStores } from '@store/index';
 import { useObserver } from 'mobx-react-lite';
 import routesMap from './router.map.jsx';
 import history from 'history/browser';

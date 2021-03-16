@@ -1,5 +1,6 @@
 import { observable, action, computed } from 'mobx';
 import beCode from '@lib/queryBeCode';
+import { rootStore } from 'declarations/web/store/root.store';
 /**
  * 整合路由信息同步到mobx
  * 获取Url中Query参数<params>： routerStore.query['params']
@@ -9,8 +10,13 @@ import beCode from '@lib/queryBeCode';
  * 新增覆盖params: routerStore.add(obj<{a:b}>)
  * 
  */
-class RouterStore {
+class module {
+  rootStore: rootStore;
   @observable history = window.location.hash;
+
+  constructor(rootStore: rootStore) {
+    this.rootStore = rootStore;
+  }
 
   /**
    * 获取路由的Path字段
@@ -18,7 +24,8 @@ class RouterStore {
    */
   @computed
   get path() {
-    return this.history.match(/(^#).*(?=\?)|(^#).*/) ? this.history.match(/(^#).*(?=\?)|(^#).*/)[0].replace(/(^#)/, '') : '/';
+    const matchResult: any = this.history.match(/(^#).*(?=\?)|(^#).*/)
+    return matchResult ? matchResult[0].replace(/(^#)/, '') : '/';
   }
 
   /**
@@ -27,7 +34,8 @@ class RouterStore {
   */
   @computed
   get queryString() {
-    return this.history.match(/(\?)\S*/) ? this.history.match(/(\?)\S*/)[0].replace(/(\?)/, '') : '';
+    const matchResult: any = this.history.match(/(^#).*(?=\?)|(^#).*/)
+    return matchResult ? matchResult[0].replace(/(\?)/, '') : '';
   }
   /**
    * 获取路由的Query字段
@@ -35,11 +43,13 @@ class RouterStore {
    */
   @computed
   get query() {
-    const queryString = this.history.match(/(\?)\S*/) ? this.history.match(/(\?)\S*/)[0].replace(/(\?)/, '') : '';
-    const queryObj = {};
+    const matchResult: any = this.history.match(/(\?)\S*/)
+    const queryString = matchResult ? matchResult[0].replace(/(\?)/, '') : '';
+    console.log(queryString);
+    const queryObj: any = {};
     if (!queryString) return queryObj;
     beCode.decode(queryString).split('&').forEach(item => {
-      const split = item.split('=');
+      const split: Array<string> = item.split('=');
       if (split[1]) {
         queryObj[split[0]] = split[1];
       }
@@ -55,8 +65,8 @@ class RouterStore {
    * @param {Array} save  要保存的Query参数 ['key1','key2']
    */
   @action
-  jump({ path, params = [], open = false, save = [] }) {
-    const query = [].concat(['appId', 'startTime', 'endTime'], save); // 每次跳转必须保留的参数
+  jump({ path = '', params = [], open = false, save = [] }): void {
+    const query: Array<string> = new Array().concat(['appId', 'startTime', 'endTime'], save); // 每次跳转必须保留的参数
     const queryArray = [];
     let final = '';
     for (let index = 0; index < query.length; index++) {
@@ -67,7 +77,7 @@ class RouterStore {
     }
     for (let i = 0; i < params.length; i++) {
       const ele = params[i];
-      queryArray.push(`${Object.keys(ele)[0]}=${Object.values(ele)[0]}`);
+      queryArray.push(`${Object.keys(ele)[0]}=${(<any>Object).values(ele)[0]}`);
     }
     final = `#${path}?${beCode.encode(queryArray.join('&'))}`;
     open ? (() => {
@@ -83,7 +93,7 @@ class RouterStore {
    * 重要函数：用来批量URL中的Query参数,
    *    */
   @action
-  add(obj) {
+  add(obj: Object): void {
     let final = '';
     const _arr = [];
     const newObj = Object.assign(this.query, obj);
@@ -96,7 +106,7 @@ class RouterStore {
   }
 
   @action
-  clearQuery(arr) {
+  clearQuery(arr: Array<string>) {
     const _arr = [];
     let final = '';
     for (const key in this.query) {
@@ -110,4 +120,4 @@ class RouterStore {
   }
 }
 
-export default RouterStore;
+export default module;
