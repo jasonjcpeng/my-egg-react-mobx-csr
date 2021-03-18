@@ -8,9 +8,9 @@ import {
   AimOutlined,
 } from '@ant-design/icons';
 
-export default (props) => {
+export default (props: any) => {
   const { routerStore, userStore } = useStores().rootStore;
-  const filterKey = { // 过滤器，实现有些路由地址不符合菜单key但也显示激活状态
+  const filterKey: any = { // 过滤器，实现有些路由地址不符合菜单key但也显示激活状态
     '/': '/index/index',
   }
   return useObserver(() => <Menu
