@@ -1,6 +1,6 @@
 import { observable, action, computed } from 'mobx';
 import beCode from '@lib/queryBeCode';
-import { rootStore } from 'declarations/web/store/root.store';
+import { rootStore } from 'declarations/web/store/root.store.d';
 /**
  * 整合路由信息同步到mobx
  * 获取Url中Query参数<params>： routerStore.query['params']

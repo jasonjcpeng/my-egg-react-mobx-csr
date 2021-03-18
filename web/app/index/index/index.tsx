@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import * as styles from './style.scss';
 import { useObserver } from 'mobx-react-lite';
 import { useStores } from '@store/index';
-import { List, Button, Statistic } from 'antd'
+import { List, Button, Statistic } from 'antd';
+import * as indexStore from 'declarations/web/store/index.store.d';
 
-export default (props) => {
+export default (props: any) => {
   const { indexIndexStore, userStore, routerStore } = useStores().rootStore;
 
   useEffect(() => {
@@ -56,7 +57,7 @@ export default (props) => {
     <List
       itemLayout="horizontal"
       dataSource={indexIndexStore.data}
-      renderItem={item => (
+      renderItem={(item: indexStore.dataItem) => (
         <List.Item>
           <List.Item.Meta
             title={<Button type='primary' onClick={item.do}>{item.title}</Button>}

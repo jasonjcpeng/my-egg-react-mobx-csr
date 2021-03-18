@@ -6,8 +6,3 @@ export interface rootStore {
   indexIndexStore: any;
   aboutIndexStore: any;
 }
-
-export interface message {
-  content: string,
-  status: string
-}

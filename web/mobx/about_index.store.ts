@@ -1,5 +1,5 @@
 import { observable, action, computed, runInAction } from 'mobx';
-import { rootStore } from 'declarations/web/store/root.store';
+import { rootStore } from 'declarations/web/store/root.store.d';
 import fetch from '@lib/fetch';
 
 class Index {

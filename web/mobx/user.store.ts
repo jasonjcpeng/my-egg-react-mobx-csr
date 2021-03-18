@@ -1,5 +1,5 @@
 import { observable, action, computed, runInAction, autorun } from 'mobx';
-import { rootStore } from 'declarations/web/store/root.store';
+import { rootStore } from 'declarations/web/store/root.store.d';
 import config from '@config/index';
 import fetch from '@lib/fetch';
 

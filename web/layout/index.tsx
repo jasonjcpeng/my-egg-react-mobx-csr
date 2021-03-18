@@ -5,7 +5,7 @@ import SideBar from './side-bar';
 import { Layout, message } from 'antd';
 import Router from '../router';
 import 'antd/dist/antd.css';
-import * as D_RootStore from 'declarations/web/store/root.store';
+import * as layoutStore from 'declarations/web/store/layout.store.d';
 const { Content, Footer, Sider } = Layout;
 
 export default () => {
@@ -15,7 +15,7 @@ export default () => {
   })
 
   useEffect(() => {
-    let layoutStoreMessage: D_RootStore.message = layoutStore.message
+    let layoutStoreMessage: layoutStore.message = layoutStore.message
     if (layoutStoreMessage.status === '') {
       return () => { }
     }

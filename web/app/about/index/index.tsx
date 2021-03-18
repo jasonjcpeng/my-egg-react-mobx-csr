@@ -5,7 +5,7 @@ import { useStores } from '@store/index';
 import { PageHeader } from 'antd';
 import { List, Button, Statistic } from 'antd'
 
-export default (props) => {
+export default (props: any) => {
   const { aboutIndexStore, routerStore } = useStores().rootStore;
 
   return useObserver(() => <div className={styles.style}>
