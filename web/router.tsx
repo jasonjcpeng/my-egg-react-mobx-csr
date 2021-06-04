@@ -1,13 +1,9 @@
 import React, { useEffect } from "react";
-import { useStores } from '@store/index';
-import { useObserver } from 'mobx-react-lite';
-import routesMap from './router.map';
-import history from 'history/browser';
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { useStores } from "@store/index";
+import { useObserver } from "mobx-react-lite";
+import routesMap from "./router.map";
+import history from "history/browser";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 export default (props: any) => {
   const { routerStore } = useStores().rootStore;
@@ -17,16 +13,16 @@ export default (props: any) => {
     });
     return () => {
       unlisten();
-    }
-  }, [])
+    };
+  }, []);
 
-  return useObserver(() => <Router >
-    <Switch>
-      {
-        routesMap.map((route: any) => {
+  return useObserver(() => (
+    <Router>
+      <Switch>
+        {routesMap.map((route: any) => {
           return (
             <Route
-              exact={route.path === '/' ? true : undefined}
+              exact={route.path === "/" ? true : undefined}
               key={route.path}
               path={route.path}
               render={(props: any) => (
@@ -34,8 +30,8 @@ export default (props: any) => {
               )}
             />
           );
-        })
-      }
-    </Switch>
-  </Router>)
-}
+        })}
+      </Switch>
+    </Router>
+  ));
+};

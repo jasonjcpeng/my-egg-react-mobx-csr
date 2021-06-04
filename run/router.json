@@ -1,36 +1,23 @@
 [
   {
     "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
+    "methods": ["HEAD", "GET"],
     "paramNames": [],
     "path": "/",
     "regexp": "/^(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
+    "stack": ["wrappedController"]
   },
   {
     "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
+    "methods": ["HEAD", "GET"],
     "paramNames": [],
     "path": "/healthy",
     "regexp": "/^\\/healthy(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
+    "stack": ["wrappedController"]
   },
   {
     "name": null,
-    "methods": [
-      "HEAD",
-      "GET"
-    ],
+    "methods": ["HEAD", "GET"],
     "paramNames": [
       {
         "name": 0,
@@ -45,15 +32,11 @@
     ],
     "path": "/api/*",
     "regexp": "/^\\/api\\/((?:.*))(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
+    "stack": ["wrappedController"]
   },
   {
     "name": null,
-    "methods": [
-      "POST"
-    ],
+    "methods": ["POST"],
     "paramNames": [
       {
         "name": 0,
@@ -68,8 +51,6 @@
     ],
     "path": "/api/*",
     "regexp": "/^\\/api\\/((?:.*))(?:\\/(?=$))?$/",
-    "stack": [
-      "wrappedController"
-    ]
+    "stack": ["wrappedController"]
   }
 ]

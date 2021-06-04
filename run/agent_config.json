@@ -55,10 +55,7 @@
     },
     "jsonp": {
       "limit": 50,
-      "callback": [
-        "_callback",
-        "callback"
-      ],
+      "callback": ["_callback", "callback"],
       "csrf": false
     },
     "onerror": {
@@ -385,9 +382,7 @@
       "package": "egg-security",
       "name": "security",
       "dependencies": [],
-      "optionalDependencies": [
-        "session"
-      ],
+      "optionalDependencies": ["session"],
       "env": [],
       "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
       "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-security",
@@ -398,9 +393,7 @@
       "package": "egg-jsonp",
       "name": "jsonp",
       "dependencies": [],
-      "optionalDependencies": [
-        "security"
-      ],
+      "optionalDependencies": ["security"],
       "env": [],
       "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
       "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-jsonp",
@@ -411,9 +404,7 @@
       "package": "egg-onerror",
       "name": "onerror",
       "dependencies": [],
-      "optionalDependencies": [
-        "jsonp"
-      ],
+      "optionalDependencies": ["jsonp"],
       "env": [],
       "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
       "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-onerror",
@@ -457,9 +448,7 @@
       "package": "egg-multipart",
       "name": "multipart",
       "dependencies": [],
-      "optionalDependencies": [
-        "schedule"
-      ],
+      "optionalDependencies": ["schedule"],
       "env": [],
       "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
       "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-multipart",
@@ -469,13 +458,9 @@
       "enable": true,
       "package": "egg-development",
       "name": "development",
-      "dependencies": [
-        "watcher"
-      ],
+      "dependencies": ["watcher"],
       "optionalDependencies": [],
-      "env": [
-        "local"
-      ],
+      "env": ["local"],
       "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
       "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-development",
       "version": "2.7.0"
@@ -484,9 +469,7 @@
       "enable": true,
       "package": "egg-logrotator",
       "name": "logrotator",
-      "dependencies": [
-        "schedule"
-      ],
+      "dependencies": ["schedule"],
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg\\config\\plugin.js",
@@ -519,10 +502,7 @@
       "enable": true,
       "package": "egg-view-nunjucks",
       "name": "nunjucks",
-      "dependencies": [
-        "security",
-        "view"
-      ],
+      "dependencies": ["security", "view"],
       "optionalDependencies": [],
       "env": [],
       "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\plugin.js",
@@ -557,9 +537,7 @@
       "name": "proxyagent",
       "dependencies": [],
       "optionalDependencies": [],
-      "env": [
-        "local"
-      ],
+      "env": ["local"],
       "from": "G:\\MyOwn\\my-egg-react-mobx-csr\\config\\plugin.js",
       "path": "G:\\MyOwn\\my-egg-react-mobx-csr\\node_modules\\egg-development-proxyagent",
       "version": "1.0.0"

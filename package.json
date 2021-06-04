@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "npx husky install",
     "clear": "node build/clear.js",
     "build:test": "npm run clear && npx webpack --env.NODE_ENV=test --mode=production",
     "build": "npm run clear && npx webpack --env.NODE_ENV=production --mode=production",
@@ -34,7 +35,9 @@
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "husky": "^6.0.0",
+    "prettier": "2.3.0"
   },
   "dependencies": {
     "@antv/g2plot": "^2.3.12",

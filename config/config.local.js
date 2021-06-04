@@ -1,8 +1,8 @@
 exports.cluster = {
   listen: {
     port: 7001,
-  }
-}
+  },
+};
 
 exports.httpclient = {
   request: {

@@ -1,4 +1,4 @@
 export default {
   mockUser: false,
-  apiHost: '/api',
-}
+  apiHost: "/api",
+};

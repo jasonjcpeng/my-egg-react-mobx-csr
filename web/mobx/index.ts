@@ -1,9 +1,9 @@
-import React from 'react'
-import routerStore from './router.store'
-import indexIndexStore from './index_index.store'
-import aboutIndexStore from './about_index.store'
-import layoutStore from './layout.store'
-import userStore from './user.store'
+import React from "react";
+import routerStore from "./router.store";
+import indexIndexStore from "./index_index.store";
+import aboutIndexStore from "./about_index.store";
+import layoutStore from "./layout.store";
+import userStore from "./user.store";
 
 const rootStore = class {
   userStore: any;
@@ -19,11 +19,10 @@ const rootStore = class {
     this.indexIndexStore = new indexIndexStore(this);
     this.aboutIndexStore = new aboutIndexStore(this);
   }
-}
-
+};
 
 const storesContext = React.createContext({
-  rootStore: new rootStore()
-})
+  rootStore: new rootStore(),
+});
 
-export const useStores = () => React.useContext(storesContext)
+export const useStores = () => React.useContext(storesContext);

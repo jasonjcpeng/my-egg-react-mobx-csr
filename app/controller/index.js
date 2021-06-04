@@ -1,13 +1,13 @@
-const Controller = require('egg').Controller;
+const Controller = require("egg").Controller;
 class IndexController extends Controller {
   async index() {
     const ctx = this.ctx;
-    await ctx.render('index.html');
+    await ctx.render("index.html");
   }
 
   async healthy() {
     const ctx = this.ctx;
-    return ctx.body = 'ok'
+    return (ctx.body = "ok");
   }
 }
 

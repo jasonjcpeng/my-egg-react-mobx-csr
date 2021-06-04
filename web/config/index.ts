@@ -1,11 +1,11 @@
-import defaultConfig from './config.default';
-import testConfig from './config.test';
-import prodConfig from './config.prod';
+import defaultConfig from "./config.default";
+import testConfig from "./config.test";
+import prodConfig from "./config.prod";
 export default ((): any => {
   switch (process_env_NODE_ENV) {
-    case 'production':
+    case "production":
       return Object.assign(defaultConfig, prodConfig);
-    case 'test':
+    case "test":
       return Object.assign(defaultConfig, testConfig);
     default:
       return defaultConfig;

@@ -1,4 +1,4 @@
 export interface dataItem {
-  title: string,
-  do: any
+  title: string;
+  do: any;
 }

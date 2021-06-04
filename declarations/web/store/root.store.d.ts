@@ -1,4 +1,3 @@
-
 export interface rootStore {
   userStore: any;
   routerStore: any;

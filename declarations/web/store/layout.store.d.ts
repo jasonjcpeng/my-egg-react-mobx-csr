@@ -1,4 +1,4 @@
 export interface message {
-  content: string,
-  status: string
+  content: string;
+  status: string;
 }
